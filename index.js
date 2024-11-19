@@ -146,6 +146,8 @@ function getCityInArabic(cityName) {
         const cities = data.moroccan_cities;
         const filteredCities = cities.filter(city => city.city.toLowerCase().includes(input.toLowerCase()));
         CitiesList.innerHTML = '';
+        showCities(filteredCities);
+
     })
 
 })
