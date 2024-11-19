@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url(./images/wallpaperflare.com_wallpaper-_1_.webp);
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            height: auto;
+        }
+    
+        .smallBG {
+            background-color: rgba(255, 255, 255, 0.450);
+        }
+    
+        .custom-gradient {
+            backdrop-filter: blur(20px);
+            background: rgba(223, 148, 83, 0.5);
+            background-repeat: no-repeat;
+        }
+    
+        @layer utilities {
+            .thin-scrollbar::-webkit-scrollbar {
+                width: 5px;
+                /* Set the width of the scrollbar */
+            }
+    
+            .thin-scrollbar::-webkit-scrollbar-track {
+                background: #f1f1f1;
+                /* Set the background color of the scrollbar track */
+            }
+    
+            .thin-scrollbar::-webkit-scrollbar-thumb {
+                background: #fcd34d;
+                /* Set the color of the scrollbar thumb */
+            }
+    
+            .thin-scrollbar::-webkit-scrollbar-thumb:hover {
+                background: #cea008;
+                /* Change the color of the scrollbar thumb on hover */
+            }
+        }
+    </style>
+    <!-- Flowbite CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@1.6.6/dist/flowbite.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.4.0/flowbite.min.css" rel="stylesheet">
+    <!-- font Awesome css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<!-- Tailwind CSS -->
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class=" bg-cover bg-center flex justify-center items-center">
+    <div class="my-10 rounded-t-full rounded-b-lg custom-gradient shadow transparnet w-11/12 sm:w-4/5 md:w-3/4 lg:w-1/2 xl:w-2/5 h-auto">
+        <div class="flex pt-10 flex-col justify-center items-center">
+            <span id="hijri" class=" font-semibold text-lg text-yellow-500"></span>
+            <span id="miladi" class="pt-1 font-semibold text-sm text-white"></span>
+
+        </div>
+        <div class="pt-10 flex flex-col justify-center items-center">
+            <span id="city" class=" font-bold text-xl text-yellow-300">الرباط</span>
+            <a  id="dropdownDefaultButton" data-dropdown-toggle="dropdown" href="#"><span class="pt-1 underline text-xs text-white">تغير المدينة <i class="fa-solid fa-repeat fa-xs"
+                        style="color: #ffffff;"></i></span></a>
+            <!-- Dropdown menu -->
+            <div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                <form class="max-w-md mx-auto">
+                    <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+                    <div class="relative">
+                        <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                            
+                        </div>
+                        <input type="search" id="default-search"
+                            class="text-right block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            placeholder="المدينة" required />
+                    </div>
+                </form>
+
+                <ul id="CitiesList" class="py-2 overflow-y-auto thin-scrollbar max-h-96 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+                    
+                </ul>
+            </div>
+
+        </div>
+        <div class="flex flex-col justify-center items-center">
+            <span id="prayName" class="pt-10 font-bold text-base text-white">: الصلاة القادمة</span>
+            <span id="TimeRest" class="pt-5 font-bold text-base text-red-400">10:00 م</span>
+        </div>
+        <div class="py-5 flex flex-col justify-center items-center">
+            <div class="flex mb-3 rounded-md items-center smallBG w-11/12 py-4">
+                <div class="flex w-1/2 justify-center">
+                    <span id="fajr" class="text-white font-semibold">
+                        4:10 am
+                    </span>
+                </div>
+                <div class="flex items-center justify-end w-1/2">
+                    <span class="font-semibold text-white">الفجر</span>
+                    <img class="w-16 px-3 text-white" src="./images/sunrise.png" alt="">
+                </div>
+            </div>
+            <div class="flex mb-3 rounded-md items-center smallBG w-11/12 py-4">
+                <div class="flex w-1/2 justify-center">
+                    <span id="sunrise" class="text-white font-semibold">
+                        4:10 am
+                    </span>
+                </div>
+                <div class="flex items-center justify-end w-1/2">
+                    <span class="font-semibold text-white">الشروق</span>
+                    <img class="w-16 px-3 text-white" src="./images/sunrise.png" alt="">
+                </div>
+            </div>
+            <div class="flex mb-3 rounded-md items-center smallBG w-11/12 py-4">
+                <div class="flex w-1/2 justify-center">
+                    <span id="dohr" class="text-white font-semibold">
+                        4:10 am
+                    </span>
+                </div>
+                <div class="flex items-center justify-end w-1/2">
+                    <span class="font-semibold text-white">الضهر</span>
+                    <img class="w-16 px-3 text-white" src="./images/sun(1).png" alt="">
+                </div>
+            </div>
+            <div class="flex mb-3 rounded-md items-center smallBG w-11/12 py-4">
+                <div class="flex w-1/2 justify-center">
+                    <span id="asr" class="text-white font-semibold">
+                        4:10 am
+                    </span>
+                </div>
+                <div class="flex items-center justify-end w-1/2">
+                    <span class="font-semibold text-white">العصر</span>
+                    <img class="w-16 px-3 text-white" src="./images/sun (2).png" alt="">
+                </div>
+            </div>
+            <div class="flex mb-3 rounded-md items-center smallBG w-11/12 py-4">
+                <div class="flex w-1/2 justify-center">
+                    <span id="maghrib" class="text-white font-semibold">
+                        4:10 am
+                    </span>
+                </div>
+                <div class="flex items-center justify-end w-1/2">
+                    <span class="font-semibold text-white">المغرب</span>
+                    <img class="w-16 px-3 text-white" src="./images/sunset-.png" alt="">
+                </div>
+            </div>
+            <div class="flex mb-3 pb-3 rounded-md items-center smallBG w-11/12 py-4">
+                <div class="flex w-1/2 justify-center">
+                    <span id="isha" class="text-white font-semibold">
+                        4:10 am
+                    </span>
+                </div>
+                <div class="flex items-center justify-end w-1/2">
+                    <span class="font-semibold text-white">العشاء</span>
+                    <img class="w-16 px-3 text-white" src="./images/night.png" alt="">
+                </div>
+            </div>
+            
+        </div>
+        
+    </div> 
+    <script type="module" src="./index.js"></script>
+    <script src="./node_modules/axios/dist/axios.min.js"></script>
+    <!-- Flowbit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@1.6.6/dist/flowbite.min.js"></script>
+</body>
+
+</html>

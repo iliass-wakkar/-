@@ -1,0 +1,34 @@
+Date : 2024-11-19 11:09:20
+Directory : c:\Users\ilias\OneDrive\Documents\GitHub\Prayer-Times
+Total : 7 files,  2739 codes, 22 comments, 57 blanks, all 2818 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| JSON       |          4 |      2,395 |          0 |          4 |      2,399 |
+| JavaScript |          1 |        195 |         17 |         38 |        250 |
+| HTML       |          1 |        148 |          5 |         14 |        167 |
+| Markdown   |          1 |          1 |          0 |          1 |          2 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++----------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                       | files      | code       | comment    | blank      | total      |
++----------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                          |          7 |      2,739 |         22 |         57 |      2,818 |
++----------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++----------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                                   | language   | code       | comment    | blank      | total      |
++----------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| c:\Users\ilias\OneDrive\Documents\GitHub\Prayer-Times\Cities.Json          | JSON       |        221 |          0 |          1 |        222 |
+| c:\Users\ilias\OneDrive\Documents\GitHub\Prayer-Times\README.md            | Markdown   |          1 |          0 |          1 |          2 |
+| c:\Users\ilias\OneDrive\Documents\GitHub\Prayer-Times\TranslateCities.Json | JSON       |         63 |          0 |          1 |         64 |
+| c:\Users\ilias\OneDrive\Documents\GitHub\Prayer-Times\index.html           | HTML       |        148 |          5 |         14 |        167 |
+| c:\Users\ilias\OneDrive\Documents\GitHub\Prayer-Times\index.js             | JavaScript |        195 |         17 |         38 |        250 |
+| c:\Users\ilias\OneDrive\Documents\GitHub\Prayer-Times\package-lock.json    | JSON       |      2,090 |          0 |          1 |      2,091 |
+| c:\Users\ilias\OneDrive\Documents\GitHub\Prayer-Times\package.json         | JSON       |         21 |          0 |          1 |         22 |
+| Total                                                                      |            |      2,739 |         22 |         57 |      2,818 |
++----------------------------------------------------------------------------+------------+------------+------------+------------+------------+
