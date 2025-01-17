@@ -60,7 +60,7 @@ var time = hours + ":" + (minutes < 10 ? "0" : "") + minutes;
 // Format the date as YYYY-MM-DD
 var formattedDate = today.getDate().toString().padStart(2, '0') + '-' + (today.getMonth() + 1).toString().padStart(2, '0') + '-' + today.getFullYear() ;
 // Fetch Hijri date using the formatted date
-fetch(`http://api.aladhan.com/v1/gToH/${formattedDate}`)
+fetch(`https://api.aladhan.com/v1/gToH/${formattedDate}`)
   .then(response => response.json())
   .then(data => {
         formattedDate = data.data.hijri.weekday.ar+' '+ data.data.hijri.day + ' ' + data.data.hijri.month.ar + ' ' + data.data.hijri.year + ' ه';
@@ -165,7 +165,7 @@ function getCity(city) {
     })
 }
 function getPrayerTimes(city){console.log(city+'hh');
-  axios.get(`http://api.aladhan.com/v1/timingsByCity/current?city=${city}&country=Morocco&method=3`)
+  axios.get(`https://api.aladhan.com/v1/timingsByCity/current?city=${city}&country=Morocco&method=3`)
 .then(response => {
         const timings = response.data.data.timings;
         const prayerTimes = [
